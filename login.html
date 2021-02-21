@@ -10,7 +10,7 @@
     <body class="login">
 
         <div>
-            <navbar>
+            <navbar id="nav">
                 <div>
                     <a href="index.html" target="_self" style="color:#000">Main</a>
                 </div>
@@ -34,46 +34,48 @@
                 </div>
             </navbar>
 
-            <div class="registr">
-                <div class="overlay left">
-                    <h2>Sign in to your account</h2>
-                    <form action="submission.html" method="GET">
-                        <label for="login-email">Email:</label>
-                        <br>
-                        <input class="login-username" name="username" type="text" required minlength="3" maxlength="30" pattern="[a-zA-Z0-9]+">
-                        <br>
-                        <label for="pw">Password:</label>
-                        <br>
-                        <input class="login-pw" name="pw" type="password" required minlength="6" maxlength="15">
-                        <br>
-                        <input class="login-submit" type="submit" value="Submit">
-                    </form>
-                </div>
+            <section class="hero">
+                <div class="register">
+                    <div class="overlay left">
+                        <h2>Sign in to your account</h2>
+                        <form action="submission.html" method="GET">
+                            <label for="login-email">Email:</label>
+                            <br>
+                            <input class="login-username" name="username" type="text" required minlength="3" maxlength="30" pattern="[a-zA-Z0-9]+">
+                            <br>
+                            <label for="pw">Password:</label>
+                            <br>
+                            <input class="login-pw" name="pw" type="password" required minlength="6" maxlength="15">
+                            <br>
+                            <input class="login-submit" type="submit" value="Submit">
+                        </form>
+                    </div>
 
-                <div class="overlay right">
-                    <h2>Registration</h2>
-                    <form action="submission.html" method="GET">
-                        <label for="username">Email:</label>
-                        <br>
-                        <input class="login-email" name="username" type="text" required minlength="3" maxlength="30" pattern="[a-zA-Z0-9]+">
-                        <br>
-                        <label for="pw">Password:</label>
-                        <br>
-                        <input class="login-pw" name="pw" type="password" required minlength="6" maxlength="15">
-                        <br>
-                        <label for="retype-pw">Re-type password:</label>
-                        <br>
-                        <input class="login-retype-pw" name="pw" type="password" required minlength="6" maxlength="15">
-                        <br>
-                        <input class="login-submit" type="submit" value="Submit">
-                    </form>
+                    <div class="overlay right">
+                        <h2>Registration</h2>
+                        <form action="submission.html" method="GET">
+                            <label for="username">Email:</label>
+                            <br>
+                            <input class="login-email" name="username" type="text" required minlength="5" maxlength="30" pattern="[a-zA-Z0-9]+">
+                            <br>
+                            <label for="pw">Password:</label>
+                            <br>
+                            <input class="login-pw" name="pw" type="password" required minlength="6" maxlength="15">
+                            <br>
+                            <label for="retype-pw">Re-type password:</label>
+                            <br>
+                            <input class="login-retype-pw" name="pw" type="password" required minlength="6" maxlength="15">
+                            <br>
+                            <input class="login-submit" type="submit" value="Submit">
+                        </form>
+                    </div>
                 </div>
-            </div>
-
+            </section>
             <footer>
                 <p>RUSH Beats, &copy; 2021</p>
             </footer>
 
         </div>
+        <script src="/script.js"></script>
     </body>
 </html>
