@@ -1,55 +1,59 @@
 /* COMMON Context */
 
 navbar {
-    display: grid;
-    grid-gap: 45px;
-    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+    display: flex;
     justify-content: center;
-    text-align: center;
+    gap: 30px;    
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #13547a 10%, #80d0c7 100%);
+    background: #fba90f;
     border: 2px solid #13547a;
     border-top: 0;
     border-bottom-left-radius: 120px;
     border-bottom-right-radius: 120px;
-    box-shadow: 6px 5px 5px #111111; 
+    box-shadow: 0px 4px 5px #111111; 
 }
 
-navbar > div {
-    margin-top: 45%;
-    margin-bottom: 40%;
+navbar .nav-item {
+    display: flex;
+    justify-content: space-between;
 }
 
 navbar img {
     width: 25px;
     height: 25px;
+    margin: auto;
 }
 
 navbar img:hover {
     animation: bounce 1s;
+    box-shadow: 0 8px 6px -6px #f1f3f4;
 }
 
 a {
-    width: 80px;
+    width: 100%;
+    background: #fba90f;
     padding: 12px 12px;
-    border-radius: 5px;
-    margin: 20% auto;
-    background: #79C8C2;
+    border-radius: 15px;
+    margin: 25px;
     text-align: center;
+    text-decoration: none;
     font-size: 18px;
     transition-property: background-color;
     transition-duration: 650ms;
-    box-shadow: 4px 3px 2px #070707; 
+    box-shadow: 0 8px 6px -6px #000000; 
 }
       
 a:hover {
-    background-color: #468E9E;
+    background-color: #1B998B;
+    text-decoration: underline;
 }
 
-.name {
-    font-size: 180%;
+.logo {
+    margin: auto;
+    font-size: 1.8rem;
     font-weight: bolder;
-    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 0px 4px #1b998b;
+    letter-spacing: 3px
 }
 
 footer {
@@ -59,31 +63,55 @@ footer {
 footer > p {
     text-align: center;
     color: #000;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 920px) {
+    navbar {
+        background: #1B998B;
+        flex-direction: column;
+        text-align: center;
+    }
+    navbar .nav-item {
+        flex-direction: column;
+        width: 10%;
+        margin: auto;
+    }
+    navbar img {
+        margin: 0 20px;
+    }
+    .logo {
+        text-shadow: 0px 0px 4px #fba90f;
+        margin: 0 -5px;
+    }
+    a {
+        margin: .5em 0;
+    }
 }
 
 /* MAIN - index.html */
 
 .main {
-    background: linear-gradient(135deg, #09203f 10%, #537895 100%);
+    background: #1B998B;
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
+    margin: 0 auto;
 }
 
 .main .p-beathistory {
     text-align: center;
-    background-image: ;
+    max-width: 100%;
 }
 
 .main .p-beathistory h2 {
     margin-top: 50px;
     margin-bottom: 50px;
-    color: #08D4DF;
+    color: #000000;
 }
 
 .main .p-beathistory p {
-    background-image: linear-gradient(135deg, #FFCF71 10%, #2376DD 100%);
-    box-shadow: 6px 5px 4px #0f0f0f;  
-    width: 930px;
+    background:#FAD7A1;
+    box-shadow: inset 0px 0px 10px 6px #0f0f0f;  
+    width: 55%;
     font-size: 17px;    
     margin: 0 auto;
     line-height: 30px;
@@ -100,38 +128,59 @@ footer > p {
 
 .main .p-beathistory img {
     margin-bottom: 50px;
-    width: 420px;
+    width: 25%;
+    max-width: 40%;
     height: 200px;
-    border: 6px solid #0C2443;
+    border: 6px solid #FAD7A1;
     border-radius: 20px;
-    box-shadow: 8px 4px 4px #0a0a0a; 
+    box-shadow: 0px 5px 4px #0a0a0a; 
+}
+
+@media (max-width: 920px) {
+    .main {
+        background: #fba90f;
+    }
+    .main .p-beathistory img {
+        width: 60%;
+        max-width: 60%;
+    }
 }
 
 /* BEATS */
 
 .beats {
-    background: linear-gradient(135deg, #09203f 10%, #537895 100%);
+    flex-direction: column;
+    background: #1B998B;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .beats .wrapper {
-    display: grid;
-    grid-template: repeat(7, 320px) / repeat(4, 320px);
-    grid-column-gap: 55px;
-    grid-row-gap: 110px;
+    display: flex;    
+    flex-wrap: wrap;
+    max-width: 70%;
     justify-content: center;
-    text-align: center;
-    margin-top: 100px;  
+    margin: 100px auto;
+    gap: 3rem;    
+}
+
+.beats .beat-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 12px;
+    box-sizing: border-box;
 }
 
 .beats .player {
-    border: 3px solid #14557A;
-    border-radius: 30px;
-    background: red;
-    margin-top: 10px;
+    width: 90%;
+    border-radius: 9px;
+    background: #f1f3f4;
     outline: none;
-    box-shadow: 6px 5px 4px #0f0f0f; 
 }
 
 @keyframes bounce {
@@ -153,18 +202,19 @@ footer > p {
 
 .beats .genre {
     font-size: 20px;
-    color: #FFCF71;
+    color: #000;
 }
 
 .beats .genre:hover {
-    color: #75C4BF;
+    color: #fba90f;
 }
 
 .beats .wrapper > div > img {
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     outline: none;
+    border-radius: 10px;
 }
 
 .transform{
@@ -175,12 +225,24 @@ footer > p {
    transform: scale(1.03);
 }
 
+@media (max-width: 920px) {
+    .beats {
+        background: #fba90f;
+    }
+}
+
 /* FAQ */
 
 .faq {
-    background: linear-gradient(135deg, #09203f 10%, #537895 100%);
+    background: #1B998B;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    margin: 0 auto;
+}
+
+@media (max-width: 920px) {
+    .faq {
+        background: #fba90f;
+    }
 }
 
 .faq .p-faq {
@@ -191,13 +253,11 @@ footer > p {
 }
 
 .faq .p-faq p {
-    background: linear-gradient(135deg, #FFCF71 10%, #2376DD 100%);
-    box-shadow: 6px 5px 4px #0f0f0f; 
-    width: 930px;
+    background:#FAD7A1;
+    box-shadow: inset 0px 0px 10px 6px #0f0f0f; 
+    width: 55%;
     font-size: 17px;    
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+    margin: 50px auto;
     line-height: 30px;
     text-align: left;
     padding: 20px;
@@ -207,33 +267,35 @@ footer > p {
 .faq h2 {
     margin-top: 50px;
     margin-bottom: 50px;
-    color: #08D4DF;
+    color: #000000;
 }
 
 /* ABOUT US */
 
 .aboutus {
-    background: linear-gradient(135deg, #09203f 10%, #537895 100%);
+    background: #1B998B;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    margin: 0 auto;
+}
+
+@media (max-width: 920px) {
+    .aboutus {
+        background: #fba90f;
+    }
 }
 
 .aboutus .p-aboutus {
-    height: 100%;
     width: 100%;
     margin-top: 0 auto;
     text-align: center;
 }
 
 .aboutus .p-aboutus p {
-    background: linear-gradient(135deg, #FFCF71 10%, #2376DD 100%);
-    box-shadow: 6px 5px 4px #0f0f0f; 
-    width: 930px;
+    background:#FAD7A1;
+    box-shadow: inset 0px 0px 10px 6px #0f0f0f; 
+    width: 55%;
     font-size: 17px;    
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px auto;
     line-height: 30px;
     text-align: left;
     padding: 20px;
@@ -243,7 +305,7 @@ footer > p {
 .aboutus h2 {
     margin-top: 50px;
     margin-bottom: 50px;
-    color: #08D4DF;
+    color: #000000;
 }
 
 .aboutus .email-us {
@@ -253,49 +315,47 @@ footer > p {
 /* LOGIN */
 
 .login {
-    background: linear-gradient(135deg, #09203f 10%, #537895 100%);
+    background: #1B998B;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    margin: 0 auto;
 }
 
-.login .hero label {
-    color: #08D4DF;
+@media (max-width: 920px) {
+    .login {
+        background: #fba90f;
+    }
 }
 
 .login .overlay {
-    float: left;
-    width: 50%;    
-    justify-content: space-around;
     text-align: center;
+    margin-top: 100px;
 }
 
-.register:after {
-    content: "";
-    display: table;
-    clear: both;
+.login .register {
+    display: flex;
+    justify-content: center;
+    gap: 10%;;
 }
 
 .login h2 {
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 40px;
-    color: #08D4DF;
 }
 
 .login .login-username, .login-pw, .login-email, .login-retype-pw, .retype-pw {
     padding: 6px 5px 2px;
     margin: 8px 8px;
-    width: 175px;
+    width: 180px;
     border-radius: 8px;
     outline: none;
 }
 
 .login .login-submit {
     background: linear-gradient(135deg, #FFCF71 10%, #2376DD 100%);
-    box-shadow: 6px 5px 4px #080808; 
-    padding: 8px 72px;
+    box-shadow: 0px 2px 1px #080808; 
+    padding: 8px 74px;
     border-radius: 8px;
     outline: none;
-    margin-bottom: 173px;
 }
 
 
