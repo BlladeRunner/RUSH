@@ -66,7 +66,7 @@ footer > p {
     letter-spacing: 3px;
 }
 
-@media (max-width: 925px) {
+@media (max-width: 950px) {
     navbar {
         background: #1B998B;
         flex-direction: column;
@@ -118,14 +118,17 @@ footer > p {
 
 .main .p-beathistory p {
     background:#FAD7A1;
-    box-shadow: inset 0px 0px 10px 6px #0f0f0f;  
+    box-shadow: 0px 0px 10px 6px #08aae88a;  
     width: 55%;
     font-size: 17px;    
     margin: 0 auto;
-    line-height: 30px;
+    line-height: 1.6;
     text-align: left;
     padding: 20px;
-    border-radius: 18px;   
+    border-radius: 18px; 
+    background-image: url(img/light-cassete.jpg);  
+    background-position: center;
+    background-size: cover;
 }
 
 .main .p-beathistory iframe {
@@ -144,7 +147,7 @@ footer > p {
     box-shadow: 0px 5px 4px #0a0a0a; 
 }
 
-@media (max-width: 920px) {
+@media (max-width: 950px) {
     .main {
         background: #fba90f;
     }
@@ -236,7 +239,7 @@ footer > p {
    transform: scale(1.03);
 }
 
-@media (max-width: 925px) {
+@media (max-width: 950px) {
     .beats {
         background: #fba90f;
     }
@@ -262,11 +265,11 @@ footer > p {
 
 .faq .p-faq p {
     background:#FAD7A1;
-    box-shadow: inset 0px 0px 10px 6px #0f0f0f; 
+    box-shadow: 0px 0px 10px 6px #08aae88a;
     width: 55%;
     font-size: 17px;    
     margin: 50px auto;
-    line-height: 30px;
+    line-height: 1.6;
     text-align: left;
     padding: 20px;
     border-radius: 18px;
@@ -278,7 +281,7 @@ footer > p {
     color: #000000;
 }
 
-@media (max-width: 925px) {
+@media (max-width: 950px) {
     .faq {
         background: #fba90f;
     }
@@ -303,11 +306,11 @@ footer > p {
 
 .aboutus .p-aboutus p {
     background:#FAD7A1;
-    box-shadow: inset 0px 0px 10px 6px #0f0f0f; 
+    box-shadow: 0px 0px 10px 6px #08aae88a;
     width: 55%;
     font-size: 17px;    
     margin: 50px auto;
-    line-height: 30px;
+    line-height: 1.6;
     text-align: left;
     padding: 20px;
     border-radius: 18px;
@@ -323,7 +326,7 @@ footer > p {
     margin-top: auto;
 }
 
-@media (max-width: 925px) {
+@media (max-width: 950px) {
     .aboutus {
         background: #fba90f;
     }
@@ -369,12 +372,14 @@ footer > p {
 .login .login-submit {
     background: linear-gradient(135deg, #FFCF71 10%, #2376DD 100%);
     box-shadow: 0px 2px 1px #080808; 
-    padding: 8px 74px;
+    padding: 8px 68px;
     border-radius: 8px;
     outline: none;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-@media (max-width: 925px) {
+@media (max-width: 950px) {
     .login {
         background: #fba90f;
     }
