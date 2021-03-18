@@ -68,11 +68,12 @@ footer > p {
 
 @media (max-width: 950px) {
     navbar {
-        background: #1B998B;
         flex-direction: column;
         text-align: center;
         flex-wrap: wrap;
         gap: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
     navbar .nav-item {
         flex-direction: column;
@@ -118,7 +119,6 @@ footer > p {
 
 .main .p-beathistory p {
     background:#FAD7A1;
-    box-shadow: 0px 0px 10px 6px #08aae88a;  
     width: 55%;
     font-size: 17px;    
     margin: 0 auto;
@@ -126,7 +126,7 @@ footer > p {
     text-align: left;
     padding: 20px;
     border-radius: 18px; 
-    background-image: url(img/light-cassete.jpg);  
+    background-image: url(img/light-lines.jpeg);  
     background-position: center;
     background-size: cover;
 }
@@ -148,9 +148,6 @@ footer > p {
 }
 
 @media (max-width: 950px) {
-    .main {
-        background: #fba90f;
-    }
     .main .p-beathistory img {
         object-fit: cover;
         object-position: left;
@@ -240,9 +237,6 @@ footer > p {
 }
 
 @media (max-width: 950px) {
-    .beats {
-        background: #fba90f;
-    }
     .beats .genre:hover {
         color: #1B998B;
     }
@@ -265,7 +259,6 @@ footer > p {
 
 .faq .p-faq p {
     background:#FAD7A1;
-    box-shadow: 0px 0px 10px 6px #08aae88a;
     width: 55%;
     font-size: 17px;    
     margin: 50px auto;
@@ -273,6 +266,9 @@ footer > p {
     text-align: left;
     padding: 20px;
     border-radius: 18px;
+    background-image: url(img/light-lines.jpeg);  
+    background-position: center;
+    background-size: cover;
 }
 
 .faq h2 {
@@ -282,9 +278,6 @@ footer > p {
 }
 
 @media (max-width: 950px) {
-    .faq {
-        background: #fba90f;
-    }
     .faq .p-faq p {
         width: 80%;
     }
@@ -306,7 +299,6 @@ footer > p {
 
 .aboutus .p-aboutus p {
     background:#FAD7A1;
-    box-shadow: 0px 0px 10px 6px #08aae88a;
     width: 55%;
     font-size: 17px;    
     margin: 50px auto;
@@ -314,6 +306,9 @@ footer > p {
     text-align: left;
     padding: 20px;
     border-radius: 18px;
+    background-image: url(img/light-lines.jpeg);  
+    background-position: center;
+    background-size: cover;
 }
 
 .aboutus h2 {
@@ -327,9 +322,6 @@ footer > p {
 }
 
 @media (max-width: 950px) {
-    .aboutus {
-        background: #fba90f;
-    }
     .aboutus .p-aboutus p {
         width: 80%;
     }
@@ -357,8 +349,8 @@ footer > p {
 .login .login-username, 
 .login-pw, .login-email, 
 .login-retype-pw, .retype-pw {
-    padding: 6px 5px 2px;
-    margin: 8px 8px;
+    padding: 8px;
+    margin: 10px 10px;
     width: 180px;
     border-radius: 8px;
     outline: none;
@@ -372,7 +364,7 @@ footer > p {
 .login .login-submit {
     background: linear-gradient(135deg, #FFCF71 10%, #2376DD 100%);
     box-shadow: 0px 2px 1px #080808; 
-    padding: 8px 68px;
+    padding: 10px 72px;
     border-radius: 8px;
     outline: none;
     font-size: 1rem;
@@ -380,9 +372,6 @@ footer > p {
 }
 
 @media (max-width: 950px) {
-    .login {
-        background: #fba90f;
-    }
     .login .register {
         flex-direction: row;
         flex-wrap: wrap;
@@ -390,6 +379,20 @@ footer > p {
     .login h2 {
         margin-top: 0;
         margin-bottom: 1rem;
+    }
+    .login .login-username, 
+    .login-pw, .login-email, 
+    .login-retype-pw, .retype-pw {
+        padding: 15px 25px;
+        margin: 15px 0;
+        width: 100%;
+        border-radius: 8px;
+        outline: none;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .login .login-submit {
+        padding: 15px 95px;
     }
 }
 
