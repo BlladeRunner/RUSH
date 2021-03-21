@@ -1,5 +1,9 @@
 /* COMMON Context */
 
+* {
+    box-sizing: border-box;
+}
+
 navbar {
     display: flex;
     justify-content: center;
@@ -349,9 +353,8 @@ footer > p {
 .login .login-username, 
 .login-pw, .login-email, 
 .login-retype-pw, .retype-pw {
-    padding: 8px;
-    margin: 10px 10px;
-    width: 180px;
+    padding: 10px;
+    margin: 15px 30px;
     border-radius: 8px;
     outline: none;
 }
@@ -364,7 +367,7 @@ footer > p {
 .login .login-submit {
     background: linear-gradient(135deg, #FFCF71 10%, #2376DD 100%);
     box-shadow: 0px 2px 1px #080808; 
-    padding: 10px 72px;
+    padding: 10px 20px;
     border-radius: 8px;
     outline: none;
     font-size: 1rem;
@@ -373,26 +376,25 @@ footer > p {
 
 @media (max-width: 950px) {
     .login .register {
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
     }
-    .login h2 {
+    .login h3, h4 {
         margin-top: 0;
         margin-bottom: 1rem;
     }
     .login .login-username, 
     .login-pw, .login-email, 
     .login-retype-pw, .retype-pw {
-        padding: 15px 25px;
+        padding: 15px 30px;
         margin: 15px 0;
-        width: 100%;
         border-radius: 8px;
         outline: none;
         text-align: center;
         box-sizing: border-box;
     }
     .login .login-submit {
-        padding: 15px 95px;
+        padding: 15px 40px;
     }
 }
 
