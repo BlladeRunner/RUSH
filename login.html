@@ -37,24 +37,18 @@
                 <div class="overlay left">
                     <h3>Not a member yet?</h3>
                     <h4>Registration</h4>
-                    <form action="submission.html" method="GET">
-                        <input class="login-submit" type="submit" value="Create an account">
+                    <form action="#" method="POST">
+                        <button class="btn" type="submit">Create an account</button>
                     </form>
                 </div>
             
                 <div class="overlay right">
                     <h3>Already a member?</h3>
                     <h4>Sign in</h4>
-                    <form action="submission.html" method="GET">
-                        <label for="login-email">Login</label>
-                        <br>
-                        <input class="login-username" name="username" type="text" placeholder="Login.." required minlength="3" maxlength="30" pattern="[a-zA-Z0-9]+">
-                        <br>
-                        <label for="pw">Password:</label>
-                        <br>
-                        <input class="login-pw" name="pw" type="password" placeholder="Password" required minlength="6" maxlength="20">
-                        <br>
-                        <input class="login-submit" type="submit" value="Submit">
+                    <form class="email-collector" action="#" method="POST">
+                        <input name="username" type="text" placeholder="Login.." required minlength="3" maxlength="30" pattern="[a-zA-Z0-9]+">                        
+                        <input name="pw" type="password" placeholder="Password" required minlength="6" maxlength="30">                        
+                        <button class="btn btn-submit" type="submit" value="Submit">Submit</button>
                     </form>
                 </div>
             </div>    

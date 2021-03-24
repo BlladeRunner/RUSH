@@ -339,6 +339,15 @@ footer > p {
     margin: 0 auto;
 }
 
+.login .hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.login .left, .right {
+    width: 100%;
+}
+
 .login .overlay {
     text-align: center;
     margin-top: 100px;
@@ -346,17 +355,15 @@ footer > p {
 
 .login .register {
     display: flex;
-    justify-content: center;
-    gap: 10%;
+    margin: auto 25%;    
 }
 
-.login .login-username, 
-.login-pw, .login-email, 
-.login-retype-pw, .retype-pw {
-    padding: 10px;
-    margin: 15px 30px;
+input {
+    padding: 12px 25px;
+    margin: 0.5rem 7rem;
     border-radius: 8px;
     outline: none;
+    text-align: center;
 }
 
 ::placeholder {
@@ -364,14 +371,25 @@ footer > p {
     opacity: 0.6;
 }
 
-.login .login-submit {
+.login .btn {
     background: linear-gradient(135deg, #FFCF71 10%, #2376DD 100%);
     box-shadow: 0px 2px 1px #080808; 
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 8px;
     outline: none;
-    font-size: 1rem;
+    font-size: inherit;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.login .btn-submit {
+    padding: 12px 75px;
+}
+
+.login .btn:hover,
+.login .btn:focus {
+    color: #ffecc6;
 }
 
 @media (max-width: 950px) {
@@ -383,18 +401,18 @@ footer > p {
         margin-top: 0;
         margin-bottom: 1rem;
     }
-    .login .login-username, 
-    .login-pw, .login-email, 
-    .login-retype-pw, .retype-pw {
+    input {
         padding: 15px 30px;
-        margin: 15px 0;
+        margin: 10px 0;
         border-radius: 8px;
         outline: none;
-        text-align: center;
         box-sizing: border-box;
     }
-    .login .login-submit {
-        padding: 15px 40px;
+    .login .btn {
+        padding: 14px 16px;
+    }
+    .login .btn-submit {
+        padding: 14px 80px;
     }
 }
 
