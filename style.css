@@ -76,12 +76,14 @@ footer > p {
         text-align: center;
         flex-wrap: wrap;
         gap: 0;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;        
+        position: absolute;
+        margin: -50px 0px;
+        padding: 15px;
     }
     navbar .nav-item {
         flex-direction: column;
-        width: 15%;
+        /* width: 15%; */
         margin: auto;
         align-items: center;
     }
@@ -243,6 +245,9 @@ footer > p {
 @media (max-width: 950px) {
     .beats .genre:hover {
         color: #1B998B;
+    }
+    .beats {
+        margin: -50px auto;
     }
 }
 
@@ -414,6 +419,10 @@ input {
     .login .btn-submit {
         padding: 14px 80px;
     }
+    .login .hero {
+        margin: 50px;
+    }
+
 }
 
 
