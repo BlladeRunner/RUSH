@@ -8,19 +8,20 @@ navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;    
+    text-align: center;    
     font-family: 'Roboto', sans-serif;
     background: #fba90f;
     border: 2px solid #13547a;
     border-top: 0;
     border-bottom-left-radius: 120px;
     border-bottom-right-radius: 120px;
-    box-shadow: 0px 4px 5px #111111; 
+    box-shadow: 0px 4px 5px #111111;
 }
 
 navbar .nav-item {
     display: flex;
     justify-content: space-between;
+    margin-right: 55px;
 }
 
 navbar img {
@@ -121,18 +122,20 @@ footer > p {
     margin-top: 50px;
     margin-bottom: 50px;
     color: #000000;
+    font-size: 2rem;
+    letter-spacing: 2px;
 }
 
 .main .p-beathistory p {
-    background:#FAD7A1;
+    background:#9BFFF9;
     width: 55%;
     font-size: 17px;    
     margin: 0 auto;
     line-height: 1.6;
     text-align: left;
     padding: 20px;
-    border-radius: 18px; 
-    background-image: url(img/light-lines.jpeg);  
+    border-radius: 15px; 
+    /* background-image: url(img/light-lines.jpeg);   */
     background-position: center;
     background-size: cover;
 }
@@ -267,15 +270,15 @@ footer > p {
 }
 
 .faq .p-faq p {
-    background:#FAD7A1;
+    background:#9BFFF9;
     width: 55%;
     font-size: 17px;    
     margin: 50px auto;
     line-height: 1.6;
     text-align: left;
     padding: 20px;
-    border-radius: 18px;
-    background-image: url(img/light-lines.jpeg);  
+    border-radius: 15px;
+    /* background-image: url(img/light-lines.jpeg);   */
     background-position: center;
     background-size: cover;
 }
@@ -284,6 +287,8 @@ footer > p {
     margin-top: 50px;
     margin-bottom: 50px;
     color: #000000;
+    font-size: 2rem;
+    letter-spacing: 2px;
 }
 
 @media (max-width: 950px) {
@@ -307,15 +312,15 @@ footer > p {
 }
 
 .aboutus .p-aboutus p {
-    background:#FAD7A1;
+    background:#9BFFF9;
     width: 55%;
     font-size: 17px;    
     margin: 50px auto;
     line-height: 1.6;
     text-align: left;
     padding: 20px;
-    border-radius: 18px;
-    background-image: url(img/light-lines.jpeg);  
+    border-radius: 15px;
+    /* background-image: url(img/light-lines.jpeg);   */
     background-position: center;
     background-size: cover;
 }
@@ -324,6 +329,8 @@ footer > p {
     margin-top: 50px;
     margin-bottom: 50px;
     color: #000000;
+    font-size: 2rem;
+    letter-spacing: 2px;
 }
 
 .aboutus .email-us {
@@ -395,6 +402,16 @@ input {
 .login .btn:hover,
 .login .btn:focus {
     color: #ffecc6;
+}
+
+.login h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.login h4 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 950px) {
