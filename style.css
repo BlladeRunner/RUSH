@@ -169,6 +169,12 @@ footer > p {
     box-shadow: 0px 5px 4px #0a0a0a; 
 }
 
+.beats-btn {
+    margin: 0 3px;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
 @media (max-width: 950px) {
     .main .p-beathistory img {
         object-fit: cover;
