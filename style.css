@@ -91,6 +91,7 @@ footer > p {
         gap: 0;
         border-bottom-left-radius: 0;        
         position: absolute;
+        display: none;
         margin: -50px 0px;
         padding: 15px;
     }
@@ -183,6 +184,10 @@ footer > p {
     .main .p-beathistory p {
         width: 80%;
     }
+    .main .p-beathistory h2 {
+        letter-spacing: 0;
+    }
+    
 }
 
 /* BEATS */
@@ -315,6 +320,9 @@ footer > p {
     .faq .p-faq p {
         width: 80%;
     }
+    .faq h2 {
+        letter-spacing: 0;
+    }
 }
 
 /* ABOUT US */
@@ -361,6 +369,9 @@ footer > p {
 @media (max-width: 950px) {
     .aboutus .p-aboutus p {
         width: 80%;
+    }
+    .aboutus h2 {
+        letter-spacing: 0;
     }
 }
 
@@ -441,6 +452,7 @@ input {
     .login .register {
         flex-direction: column;
         flex-wrap: wrap;
+        margin: auto;
     }
     .login h3, h4 {
         margin-top: 0;
