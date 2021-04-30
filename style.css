@@ -21,7 +21,7 @@ navbar {
 navbar .nav-item {
     display: flex;
     justify-content: space-between;
-    margin-right: 55px;
+    margin-right: 25px;
 }
 
 navbar img {
@@ -66,11 +66,19 @@ a:hover {
     text-decoration: underline;
 }
 
-.logo {
+navbar .logo {
     font-size: 1.8rem;
     font-weight: bolder;
     text-shadow: 0px 0px 4px #1b998b;
     letter-spacing: 3px;
+}
+
+navbar .toggle-menu {
+    display: none;
+}
+
+.cart {
+    cursor: pointer;
 }
 
 footer {
@@ -90,8 +98,8 @@ footer > p {
         flex-wrap: wrap;
         gap: 0;
         border-bottom-left-radius: 0;        
-        position: absolute;
-        display: none;
+        position: fixed;
+        /* display: none; */
         margin: -50px 0px;
         padding: 15px;
     }
@@ -101,13 +109,24 @@ footer > p {
         margin: auto;
         align-items: center;
     }
+    navbar .toggle-menu {
+        display: block;
+        font-size: 40px;
+        background: orangered;
+        padding: 0 15px;
+        border-radius: 10px;
+        box-shadow: 5px 2px 2px rgb(177, 202, 135);
+    }
+    navbar .toggle-menu:hover {
+        cursor: pointer;
+        background: rgb(255, 87, 26);
+    }
+
     navbar img {
         margin: 0 20px;
     }
-    .logo {
-        text-shadow: 0px 0px 4px #fba90f;
-        order: -1;
-        padding-top: .6rem;
+    navbar .logo {
+        display: none;    
     }
     .cart {
         order: 1;
@@ -425,6 +444,7 @@ input {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 .login .btn-submit {
