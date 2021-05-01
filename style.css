@@ -73,7 +73,7 @@ navbar .logo {
     letter-spacing: 3px;
 }
 
-navbar .toggle-menu {
+navbar .toggle-menu-active {
     display: none;
 }
 
@@ -109,15 +109,15 @@ footer > p {
         margin: auto;
         align-items: center;
     }
-    navbar .toggle-menu {
+    navbar .toggle-menu-active {
         display: block;
-        font-size: 40px;
+        font-size: 30px;
         background: orangered;
-        padding: 0 15px;
+        padding: 0 12px;
         border-radius: 10px;
         box-shadow: 5px 2px 2px rgb(177, 202, 135);
     }
-    navbar .toggle-menu:hover {
+    navbar .toggle-menu-active:hover {
         cursor: pointer;
         background: rgb(255, 87, 26);
     }
@@ -468,7 +468,7 @@ input {
     color: #2D2926FF;
 }
 
-@media (max-width: 950px) {
+@media only screen and (max-width: 650px) and (min-width: 500px) {
     .login .register {
         flex-direction: column;
         flex-wrap: wrap;
