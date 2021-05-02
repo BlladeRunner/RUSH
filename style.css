@@ -73,9 +73,17 @@ navbar .logo {
     letter-spacing: 3px;
 }
 
+/* toggle menu  */
+
 navbar .toggle-menu-active {
     display: none;
 }
+
+.toggle-menu-inactive {
+    display: none;
+}
+
+/* toggle menu  */
 
 .cart {
     cursor: pointer;
@@ -99,7 +107,7 @@ footer > p {
         gap: 0;
         border-bottom-left-radius: 0;        
         position: fixed;
-        /* display: none; */
+        display: none;
         margin: -50px 0px;
         padding: 15px;
     }
@@ -109,8 +117,21 @@ footer > p {
         margin: auto;
         align-items: center;
     }
+    .toggle-menu-inactive {
+        display: inline-block;
+        margin: 16px 400px;
+        font-size: 30px;
+        background: orangered;
+        padding: 5px 15px;
+        border-radius: 12px;
+        box-shadow: 5px 2px 2px rgb(177 202 135);
+    }
+    .toggle-menu-inactive:hover {
+        cursor: pointer;
+        background: rgb(255, 87, 26);
+    }
     navbar .toggle-menu-active {
-        display: block;
+        display: none;
         font-size: 30px;
         background: orangered;
         padding: 0 12px;
@@ -121,7 +142,6 @@ footer > p {
         cursor: pointer;
         background: rgb(255, 87, 26);
     }
-
     navbar img {
         margin: 0 20px;
     }
