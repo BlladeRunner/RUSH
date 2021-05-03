@@ -76,12 +76,12 @@ navbar .logo {
 /* toggle menu  */
 
 navbar .toggle-menu-active {
-    display: none;
+    display: inline-block;
 }
 
 .toggle-menu-inactive {
     display: none;
-}
+} 
 
 /* toggle menu  */
 
@@ -101,14 +101,14 @@ footer > p {
 
 @media (max-width: 950px) {
     navbar {
+        /* display: none; */
         flex-direction: column;
         text-align: center;
         flex-wrap: wrap;
         gap: 0;
         border-bottom-left-radius: 0;        
         position: fixed;
-        display: none;
-        margin: -50px 0px;
+        margin: 0;
         padding: 15px;
     }
     navbar .nav-item {
@@ -116,6 +116,18 @@ footer > p {
         /* width: 15%; */
         margin: auto;
         align-items: center;
+    }
+    navbar .toggle-menu-active {
+        display: block;
+        font-size: 30px;
+        background: orangered;
+        padding: 0 12px;
+        border-radius: 10px;
+        box-shadow: 5px 2px 2px rgb(177, 202, 135);
+    }
+    navbar .toggle-menu-active:hover {
+        cursor: pointer;
+        background: rgb(255, 87, 26);
     }
     .toggle-menu-inactive {
         display: inline-block;
@@ -127,18 +139,6 @@ footer > p {
         box-shadow: 5px 2px 2px rgb(177 202 135);
     }
     .toggle-menu-inactive:hover {
-        cursor: pointer;
-        background: rgb(255, 87, 26);
-    }
-    navbar .toggle-menu-active {
-        display: none;
-        font-size: 30px;
-        background: orangered;
-        padding: 0 12px;
-        border-radius: 10px;
-        box-shadow: 5px 2px 2px rgb(177, 202, 135);
-    }
-    navbar .toggle-menu-active:hover {
         cursor: pointer;
         background: rgb(255, 87, 26);
     }
