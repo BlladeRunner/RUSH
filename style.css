@@ -76,7 +76,7 @@ navbar .logo {
 /* toggle menu  */
 
 navbar .toggle-menu-active {
-    display: inline-block;
+    display: none;
 }
 
 .toggle-menu-inactive {
@@ -134,8 +134,8 @@ footer > p {
         margin: 16px 400px;
         font-size: 30px;
         background: orangered;
-        padding: 5px 15px;
-        border-radius: 12px;
+        padding: 0px 12px;
+        border-radius: 10px;
         box-shadow: 5px 2px 2px rgb(177 202 135);
     }
     .toggle-menu-inactive:hover {

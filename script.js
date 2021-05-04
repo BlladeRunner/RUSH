@@ -1,9 +1,13 @@
-const activeMenu = document.getElementByC('')
-const inactiveMenu = document.getElementById('')
+const activeMenu = document.querySelector('.toggle-menu-active')
+const inactiveMenu = document.querySelector('.toggle-menu-inactive')
 const navbar = document.getElementById('nav')
 
-activeMenu.addEventListener(click, toggle)
+document.addEventListener('click', toggle)
 
 function toggle() {
+    if(navbar === activeMenu) {
+    navbar.style.display = "block"
+} else {
     navbar.style.display = "none"
+    } 
 }
