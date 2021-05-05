@@ -101,7 +101,7 @@ footer > p {
 
 @media (max-width: 950px) {
     navbar {
-        /* display: none; */
+        display: none;
         flex-direction: column;
         text-align: center;
         flex-wrap: wrap;
@@ -130,7 +130,7 @@ footer > p {
         background: rgb(255, 87, 26);
     }
     .toggle-menu-inactive {
-        display: inline-block;
+        display: table;
         margin: 16px 400px;
         font-size: 30px;
         background: orangered;
