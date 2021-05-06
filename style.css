@@ -107,7 +107,7 @@ footer > p {
         transition: background-color 2s ease-out;
     }
     navbar:hover {
-        background: rgb(150, 218, 139);
+        background: #FBCE73;
     }
     navbar .nav-item {
         flex-direction: column;
@@ -115,17 +115,17 @@ footer > p {
         align-items: center;
     }
     .open-menu {
-        display: inline;
-        margin: 16px 400px;
+        display: inline-block;
+        margin: 1.2rem 400px;
         font-size: 30px;
-        background: orangered;
+        background: #fba90f;
         padding: 0px 12px;
         border-radius: 10px;
-        box-shadow: 5px 2px 2px rgb(177 202 135);
+        /* box-shadow: 5px 2px 2px rgb(177 202 135); */
     }
     .open-menu:hover {
         cursor: pointer;
-        background: rgb(255, 87, 26);
+        background: #FBCE73;
     }
     navbar img {
         margin: 0 20px;
@@ -234,7 +234,7 @@ footer > p {
     gap: 3rem;    
 }
 
-.beats .beat-item{
+.beats .beat-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -286,7 +286,7 @@ footer > p {
     border-radius: 10px;
 }
 
-.transform{
+.transform {
    transition: all .5s ease-out;
 }
 
