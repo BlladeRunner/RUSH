@@ -1,14 +1,16 @@
-const activeMenu = document.querySelector('.toggle-menu-active')
-const inactiveMenu = document.querySelector('.toggle-menu-inactive')
+// const activeMenu = document.querySelector('.toggle-menu-active')
+const activeMenu = document.querySelector('.open-menu')
 const navbar = document.getElementById('nav')
 
 document.addEventListener('click', toggle)
 
+console.log("toggled")
+
 function toggle() {
-    if(navbar === inactiveMenu) {
-    navbar.style.display = "block"
+    if(navbar !== activeMenu) {
+        navbar.style.display = "block"
     // navbar.style.transition = "width 5s"
-}   else {
-    navbar.style.display = "none"
+}   if(navbar === activeMenu) {
+        navbar.style.display = "none"
     } 
 }

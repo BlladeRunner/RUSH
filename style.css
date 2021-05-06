@@ -75,11 +75,11 @@ navbar .logo {
 
 /* toggle menu  */
 
-navbar .toggle-menu-active {
+/* navbar .toggle-menu-active {
     display: none;
-}
+} */
 
-.toggle-menu-inactive {
+.open-menu {
     display: none;
 } 
 
@@ -117,7 +117,7 @@ footer > p {
         margin: auto;
         align-items: center;
     }
-    navbar .toggle-menu-active {
+    /* navbar .toggle-menu-active {
         display: block;
         font-size: 30px;
         background: orangered;
@@ -127,10 +127,10 @@ footer > p {
     }
     navbar .toggle-menu-active:hover {
         cursor: pointer;
-        background: rgb(255, 87, 26);
-    }
-    .toggle-menu-inactive {
-        display: table;
+        background: rgb(255, 87, 26); 
+    } */
+    .open-menu {
+        display: inline;
         margin: 16px 400px;
         font-size: 30px;
         background: orangered;
@@ -138,7 +138,7 @@ footer > p {
         border-radius: 10px;
         box-shadow: 5px 2px 2px rgb(177 202 135);
     }
-    .toggle-menu-inactive:hover {
+    .open-menu:hover {
         cursor: pointer;
         background: rgb(255, 87, 26);
     }
@@ -154,6 +154,7 @@ footer > p {
     }
     a {
         margin: .5rem 0;
+        font-size: 16px;
     }
 }
 
