@@ -113,22 +113,9 @@ footer > p {
     }
     navbar .nav-item {
         flex-direction: column;
-        /* width: 15%; */
         margin: auto;
         align-items: center;
     }
-    /* navbar .toggle-menu-active {
-        display: block;
-        font-size: 30px;
-        background: orangered;
-        padding: 0 12px;
-        border-radius: 10px;
-        box-shadow: 5px 2px 2px rgb(177, 202, 135);
-    }
-    navbar .toggle-menu-active:hover {
-        cursor: pointer;
-        background: rgb(255, 87, 26); 
-    } */
     .open-menu {
         display: inline;
         margin: 16px 400px;
@@ -148,8 +135,8 @@ footer > p {
     navbar .logo {
         display: none;    
     }
-    .cart {
-        order: 1;
+    navbar .nav-item .cart {
+        order: 0;
         margin: 1.4rem;
     }
     a {
