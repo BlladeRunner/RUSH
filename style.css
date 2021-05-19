@@ -91,7 +91,7 @@ footer > p {
     letter-spacing: 3px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 955px) {
     navbar {
         display: none;
         flex-direction: column;
@@ -299,7 +299,7 @@ footer > p {
         color: #1B998B;
     }
     .beats {
-        margin: -50px auto;
+        margin: 0 auto;
     }
 }
 
