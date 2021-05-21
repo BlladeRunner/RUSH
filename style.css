@@ -104,7 +104,7 @@ footer > p {
         -webkit-transition: background-color 2s ease-out;
         -moz-transition: background-color 2s ease-out;
         -o-transition: background-color 2s ease-out;
-        transition: background-color 2s ease-out;
+        transition: background-color 2s ease-out;        
     }
     navbar:hover {
         background: #FBCE73;
@@ -120,7 +120,7 @@ footer > p {
         font-size: 30px;
         background: #fba90f;
         padding: 0px 12px;
-        border-radius: 10px;
+        border-radius: 10px;        
         /* box-shadow: 5px 2px 2px rgb(177 202 135); */
     }
     .open-menu:hover {
@@ -139,7 +139,7 @@ footer > p {
     }
     a {
         margin: .5rem 0;
-        font-size: 16px;
+        font-size: 16px;        
     }    
 }
 
