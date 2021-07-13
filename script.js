@@ -2,8 +2,6 @@ const activeMenu = document.querySelector('.open-menu')
 const navbar = document.getElementById('nav')
 let closed = true;
 
-activeMenu.style.transition = "all 2s ease-out"
-
 
 activeMenu.addEventListener('click', () => toggle())
 
